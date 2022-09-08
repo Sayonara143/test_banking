@@ -1,0 +1,25 @@
+{
+  "name": "super_bank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildDist": "babel src --out-dir dist",
+    "dev": "nodemon --exec babel-node src/server.js",
+    "start": "node dist/server.js"
+  },
+  "author": " <sasha-bykov-1997@inbox.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.0",
+    "@babel/node": "^7.18.10",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.19.0",
+    "nodemon": "^2.0.19"
+  }
+}
